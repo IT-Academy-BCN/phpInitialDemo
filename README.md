@@ -81,5 +81,3 @@ to style the error controller’s view file (app/views/error/error.phtml)
 - [PHP Developers Guide](https://www.php.net/manual/en/index.php).
 - .gitignore file configuration. [See Official Docs](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files).
 - Git branches. [See Official Docs](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell).
-
-//provant canvis//
