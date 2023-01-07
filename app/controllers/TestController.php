@@ -7,8 +7,8 @@ class TestController extends ApplicationController
 		$this->view->message = "hello from test::index";
 	}
 	
-	public function checkAction()
+	public function checkingAction()
 	{
-		echo "hello from test::check";
+		return 'check.phtml';
 	}
 }

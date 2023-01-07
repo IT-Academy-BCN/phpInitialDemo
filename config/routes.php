@@ -11,7 +11,10 @@
  */
 $routes = array(
 	'/test' => 'test#index',
-	'/index' => 'ApplicationController#index'
+	'/test2' => 'test#checking',
+	'/test3' => 'hola#caracola',
+	'/index' => 'index#index',
+	'/' => 'index#index'
 );
 
 ?>
