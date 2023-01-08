@@ -11,5 +11,23 @@ class ApplicationController extends Controller
         echo 'ApplicationController/index';
     }
 
+    public function createTask()
+    {
+
+    }
+
+    public function editTask($task_id)
+    {
+
+    }
+
+    public function viewAllTasks()
+    {
+
+    }
+
+    public function viewOneTask($task_id)
+    {
     
+    }
 }
