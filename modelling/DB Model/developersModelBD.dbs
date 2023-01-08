@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="developersJSON" id="Project-12b0" database="LogicalDesign" >
+	<schema name="INSTANCE" catalogname="developersJSON" >
+		<table name="tasks" prior="tasques" >
+			<column name="id" type="INT" jt="4" mandatory="y" />
+			<column name="taskName" type="VARCHAR" length="100" jt="12" mandatory="y" />
+			<column name="user" type="VARCHAR" length="10" jt="12" mandatory="y" />
+			<column name="status" type="ENUM" jt="12" mandatory="y" >
+				<enumeration><![CDATA['pendents', 'en execució', 'acabades']]></enumeration>
+			</column>
+			<column name="timeStart" type="DATETIME" jt="93" />
+			<column name="timeEnd" type="DATETIME" jt="93" />
+			<index name="pk_tasks" unique="PRIMARY_KEY" >
+				<column name="id" />
+			</index>
+		</table>
+	</schema>
+	<layout name="Default Layout" id="Layout-692" show_relation="columns" >
+		<comment><![CDATA[developersJSON]]></comment>
+		<entity schema="developersJSON.INSTANCE" name="tasks" color="C1D8EE" x="48" y="48" />
+	</layout>
+</project>
