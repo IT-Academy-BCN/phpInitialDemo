@@ -1,16 +1,13 @@
-
-<?php
-require 'GetTasks.class.php';
- 
-$tasks = getTasks();
-
-?>
-
-<table class="col-span-12">
+hello from index.phtml. down below there should be the table
+<table class="col-span-12 shadow-lg bg-white" >
+  <!--
 <?php foreach ($tasks as $task): ?>
-  <tr class="grid grid-cols-12">
-    <td class="border border-indigo-500 col-span-9 md:col-span-10 p-5">
+-->
+  <tr class="grid grid-cols-12 border-b">
+    <td class="col-span-9 md:col-span-10 p-5">
+      <!--
     <?php echo $task['taskName'] ?>
+-->
     </td>
     <td class="border border-indigo-500 col-span-3 md:col-span-2 grid grid-cols-3 gap-2 sm:gap-4 p-2 place-items-center">
         <span><img src="./images/view.png" class="w-15 md:w-10"></span>
@@ -18,5 +15,10 @@ $tasks = getTasks();
         <span><img src="./images/delete.png" class="w-15 md:w-10"></span>
     </td>
   </tr>
+
+  <!--
   <?php endforeach;; ?>
+-->
 </table>
+
+fhfhf
