@@ -6,16 +6,16 @@ $tasks = getTasks();
 
 ?>
 
-<table class="col-start-2 col-span-10">
+<table class="col-span-12">
 <?php foreach ($tasks as $task): ?>
   <tr class="grid grid-cols-12">
-    <td class="border col-span-10 p-5">
+    <td class="border border-indigo-500 col-span-9 md:col-span-10 p-5">
     <?php echo $task['taskName'] ?>
     </td>
-    <td class="border col-span-2 grid p-5 grid-cols-3 gap-5">
-        <span><img src="./images/view.png" class="w-10"></span>
-        <span><img src="./images/edit.png" class="w-10"></span>
-        <span><img src="./images/delete.png" class="w-10"></span>
+    <td class="border border-indigo-500 col-span-3 md:col-span-2 grid grid-cols-3 gap-2 sm:gap-4 p-2 place-items-center">
+        <span><img src="./images/view.png" class="w-15 md:w-10"></span>
+        <span><img src="./images/edit.png" class="w-15 md:w-10"></span>
+        <span><img src="./images/delete.png" class="w-15 md:w-10"></span>
     </td>
   </tr>
   <?php endforeach;; ?>
