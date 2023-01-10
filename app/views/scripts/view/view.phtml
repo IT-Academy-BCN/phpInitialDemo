@@ -1,0 +1,23 @@
+
+<?php 
+$allTasks = ($this->allTasks);
+foreach ($allTasks as $task): ?>
+<div class="col-span-12">
+<h3 class="font-bold">Tasca a realitzar:</h3>
+    <?php echo $task['taskName']?>
+
+<h3 class="font-bold">Usuari:</h3>
+    <?php echo $task['user']?>
+</div>
+<!--
+    "id":4,
+        "taskName":"Acabar developers",
+        "user":"jordijs",
+        "status":"doing",
+        "timeStart": "2022-12-01",
+        "timeEnd": "2022-01-09" 
+-->
+    
+
+
+  <?php endforeach;; ?>

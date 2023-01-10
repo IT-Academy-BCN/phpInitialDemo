@@ -10,10 +10,10 @@ foreach ($allTasks as $task): ?>
     <?php echo $task['taskName'] ?>
 
     </td>
-    <td class="border border-indigo-500 col-span-3 md:col-span-2 grid grid-cols-3 gap-2 sm:gap-4 p-2 place-items-center">
-        <span><img src="./images/view.png" class="w-15 md:w-10"></span>
-        <span><img src="./images/edit.png" class="w-15 md:w-10"></span>
-        <span><img src="./images/delete.png" class="w-15 md:w-10"></span>
+    <td class="col-span-3 md:col-span-2 grid grid-cols-3 gap-2 sm:gap-4 p-2 place-items-center">
+        <a href="view?id=<?php echo $task['id'] ?>"><img src="./images/view.png" class="w-15 md:w-10"></a>
+        <a href="edit/<?php echo $task['id'] ?>"><img src="./images/edit.png" class="w-15 md:w-10"></a>
+        <a href="delete/<?php echo $task['id'] ?>"><img src="./images/delete.png" class="w-15 md:w-10"></a>
     </td>
   </tr>
 

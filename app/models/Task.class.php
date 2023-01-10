@@ -12,6 +12,12 @@ class Task extends Model
         $tasks = json_decode($this->database, true);
         return $tasks;
     }
+
+    public function getTaskById($id){
+        $allTasks = $tasks->getTasks();
+        $tasks = json_decode($this->database, true);
+        return $tasks;
+    }
     
 }
 
