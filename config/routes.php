@@ -15,7 +15,8 @@ $routes = array(
 	'/test3' => 'hola#caracola',
 	'/index' => 'index#index',
 	'/' => 'index#index',
-	'/view' => 'view#view'
+	'/view' => 'view#view',
+	'/new' => 'new#new'
 );
 
 ?>

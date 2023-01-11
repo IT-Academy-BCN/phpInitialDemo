@@ -3,20 +3,20 @@
 require ROOT_PATH . '/app/models/Task.class.php';
 
 
-class IndexController extends Controller
+class NewController extends Controller
 {
 
-	public function indexAction()
+	public function NewAction()
     { 
-        //Pas 1: Carregar tasques
+        
         $tasks = new Task;
         $allTasks = $tasks->getTasks();
         
-        //Pas 2: Passo tasques a la vista
+        $_POST['']
         
         $this->view->allTasks = $allTasks;
         
-        //Pas 3: Invoco la vista
+        
     }
 
     
