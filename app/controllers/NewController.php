@@ -9,10 +9,10 @@ class NewController extends Controller
 	public function NewAction()
     { 
         
-        $tasks = new Task;
+        $tasks = new TaskModel;
         $allTasks = $tasks->getTasks();
         
-        $_POST['']
+        //$_POST[''];
         
         $this->view->allTasks = $allTasks;
         

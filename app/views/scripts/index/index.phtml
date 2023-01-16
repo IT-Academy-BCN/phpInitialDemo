@@ -6,18 +6,30 @@ foreach ($allTasks as $task): ?>
 
   <tr class="grid grid-cols-12 border-b">
     <td class="col-span-9 md:col-span-10 p-5">
-      
     <?php echo $task['taskName'] ?>
-
     </td>
     <td class="col-span-3 md:col-span-2 grid grid-cols-3 gap-2 sm:gap-4 p-2 place-items-center">
         <a href="view?id=<?php echo $task['id'] ?>"><img src="./images/view.png" class="w-15 md:w-10"></a>
-        <a href="edit/<?php echo $task['id'] ?>"><img src="./images/edit.png" class="w-15 md:w-10"></a>
-        <a href="delete/<?php echo $task['id'] ?>"><img src="./images/delete.png" class="w-15 md:w-10"></a>
+        <a href="edit?id=<?php echo $task['id'] ?>"><img src="./images/edit.png" class="w-15 md:w-10"></a>
+        <a href="delete?id=<?php echo $task['id'] ?>"><img src="./images/delete.png" class="w-15 md:w-10"></a>
     </td>
   </tr>
 
 
   <?php endforeach;; ?>
-
+  <tr class="grid grid-cols-12 border-b">
+    <td class="col-span-9 md:col-span-10 p-5">
+    <a href="new">
+        <button class="shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        <i class="fa-solid fa-plus"></i>
+        </button>
+        </a>
+    </td>
+    <td class="col-span-3 md:col-span-2 grid grid-cols-3 gap-2 sm:gap-4 p-2 place-items-center">
+    </td>
+  </tr>
 </table>
+
+
+
+

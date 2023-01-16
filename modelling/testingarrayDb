@@ -1,0 +1,26 @@
+
+array(5) 
+{ [0]=> array(6) {
+  ["id"]=> int(1) ["taskName"]=> string(18) "Escriure un llibre" 
+    ["user"]=> string(9) "carlosr-z" 
+    ["status"]=> string(9) "completed" 
+    ["timeStart"]=> string(10) "2000-01-15" 
+    ["timeEnd"]=> string(10) "2020-05-23" 
+  } 
+  [1]=> array(6) {
+    ["id"]=> int(2)
+    ["taskName"]=> string(13) "Tenir un fill" 
+    ["user"]=> string(6)
+    "vmaria" ["status"]=> string(7) 
+    "toStart" ["timeStart"]=> string(10) 
+    "2021-12-25" ["timeEnd"]=> string(10) "2022-04-12" 
+  } 
+  [2]=> array(6) 
+  { ["id"]=> int(3) ["taskName"]=> string(16) "Plantar un arbre" ["user"]=> string(5) "adacb" ["status"]=> string(5) "doing" ["timeStart"]=> string(10) "2015-06-13" ["timeEnd"]=> string(10) "2022-12-31" } 
+  [3]=> array(6) 
+  { ["id"]=> int(4) ["taskName"]=> string(17) "Acabar developers" ["user"]=> string(7) "jordijs" ["status"]=> string(5) "doing" ["timeStart"]=> string(10) "2022-12-01" ["timeEnd"]=> string(10) "2022-01-09" } 
+  [4]=> array(6) 
+  { ["id"]=> int(5) ["taskName"]=> string(17) "Acabar IT Academy" ["user"]=> string(7) "jordijs" ["status"]=> string(5) "doing" ["timeStart"]=> string(10) "2022-09-01" ["timeEnd"]=> string(10) "2022-06-31" } 
+}
+
+array(5) { [0]=> array(6) { ["id"]=> int(1) ["taskName"]=> string(18) "Escriure un llibre" ["user"]=> string(9) "carlosr-z" ["status"]=> string(9) "completed" ["timeStart"]=> string(10) "2000-01-15" ["timeEnd"]=> string(10) "2020-05-23" } [1]=> array(6) { ["id"]=> int(2) ["taskName"]=> string(13) "Tenir un fill" ["user"]=> string(6) "vmaria" ["status"]=> string(7) "toStart" ["timeStart"]=> string(10) "2021-12-25" ["timeEnd"]=> string(10) "2022-04-12" } [2]=> array(6) { ["id"]=> int(3) ["taskName"]=> string(16) "Plantar un arbre" ["user"]=> string(5) "adacb" ["status"]=> string(5) "doing" ["timeStart"]=> string(10) "2015-06-13" ["timeEnd"]=> string(10) "2022-12-31" } [3]=> array(6) { ["id"]=> int(4) ["taskName"]=> string(17) "Acabar developers" ["user"]=> string(7) "jordijs" ["status"]=> string(5) "doing" ["timeStart"]=> string(10) "2022-12-01" ["timeEnd"]=> string(10) "2022-01-09" } [4]=> array(6) { ["id"]=> int(5) ["taskName"]=> string(17) "Acabar IT Academy" ["user"]=> string(7) "jordijs" ["status"]=> string(5) "doing" ["timeStart"]=> string(10) "2022-09-01" ["timeEnd"]=> string(10) "2022-06-31" } }

@@ -9,7 +9,7 @@ class IndexController extends Controller
 	public function indexAction()
     { 
         //Pas 1: Carregar tasques
-        $tasks = new Task;
+        $tasks = new TaskModel;
         $allTasks = $tasks->getTasks();
         
         //Pas 2: Passo tasques a la vista

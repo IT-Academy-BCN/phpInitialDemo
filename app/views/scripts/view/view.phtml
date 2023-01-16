@@ -1,23 +1,56 @@
+<div class="grid col-span-12 gap-10">
+    <table class="shadow-lg bg-white" >
+    <?php 
+    $taskToView = ($this->taskToView);
+    ?>
 
-<?php 
-$allTasks = ($this->allTasks);
-foreach ($allTasks as $task): ?>
-<div class="col-span-12">
-<h3 class="font-bold">Tasca a realitzar:</h3>
-    <?php echo $task['taskName']?>
-
-<h3 class="font-bold">Usuari:</h3>
-    <?php echo $task['user']?>
+        <tr class="grid grid-cols-12 border-b">
+            <td class="col-span-6 p-5">
+                <h3 class="font-bold">Tasca a realitzar</h3>
+            </td>
+            <td class="col-span-6 p-5">
+                <?php echo $taskToView["taskName"]?>
+            </td>
+        </tr>
+        <tr class="grid grid-cols-12 border-b">
+            <td class="col-span-6 p-5">
+                <h3 class="font-bold">Nom d'usuari</h3>
+            </td>
+            <td class="col-span-6 p-5">
+                <?php echo $taskToView["user"]?>
+            </td>
+        </tr>
+        <tr class="grid grid-cols-12 border-b">
+            <td class="col-span-6 p-5">
+                <h3 class="font-bold">Estat</h3>
+            </td>
+            <td class="col-span-6 p-5">
+                <?php echo $taskToView["status"]?>
+            </td>
+        </tr>
+        <tr class="grid grid-cols-12 border-b">
+            <td class="col-span-6 p-5">
+                <h3 class="font-bold">Data d'inici</h3>
+            </td>
+            <td class="col-span-6 p-5">
+                <?php echo $taskToView["timeStart"]?>
+            </td>
+        </tr>
+        <tr class="grid grid-cols-12 border-b">
+            <td class="col-span-6 p-5">
+                <h3 class="font-bold">Data de fi</h3>
+            </td>
+            <td class="col-span-6 p-5">
+                <?php echo $taskToView["timeEnd"]?>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <a href="index">
+        <button class="shadow bg-gray-500 hover:bg-gray-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+        <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        </a>
+    </div>
 </div>
-<!--
-    "id":4,
-        "taskName":"Acabar developers",
-        "user":"jordijs",
-        "status":"doing",
-        "timeStart": "2022-12-01",
-        "timeEnd": "2022-01-09" 
--->
-    
 
-
-  <?php endforeach;; ?>

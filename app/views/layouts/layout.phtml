@@ -4,7 +4,26 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Tailwind-->
 		<script src="https://cdn.tailwindcss.com"></script>
+		<!--Font Awesome-->
+		<script src="https://kit.fontawesome.com/68f3ec3982.js" crossorigin="anonymous"></script>
+		<!--Tailwind Elements-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script>
+		tailwind.config = {
+			theme: {
+			extend: {
+				fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				},
+			}
+			}
+		}
+		</script>
 	</head>
 	<body>
 		<div class="container grid grid-cols-12 mx-auto text-center mb-10">
@@ -15,5 +34,7 @@
 			<?php echo $this->content(); ?>
 			
 		</div>
+		<!--Tailwind elements-->
+		<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 	</body>
 </html>
